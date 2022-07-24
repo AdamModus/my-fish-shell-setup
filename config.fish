@@ -28,7 +28,7 @@ alias p="pnpm"
 
 # ____ _  _ _  _ ____ ___ _ ____ _  _ ____ 
 # |___ |  | |\ | |     |  | |  | |\ | [__  
-# |    |__| | \| |___  |  | |__| | \| ___]
+# |    |__| | \| |___  |  | |__| | \| ___] 
 #
 
 function purge-node-modules -d "Remove all node_modules folders recursively in current folder and subfolders"

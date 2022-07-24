@@ -26,6 +26,18 @@ killall Finder
 
 ---
 
+## Install iTerm2
+
+[iTerm2](https://iterm2.com/) is a replacement for the default Terminal app. It looks nice and has cool features.
+
+---
+
+## Set up iTerm2 theme
+
+I quite like the [dracula theme](https://draculatheme.com/iterm). It's a nice dark theme with a nice dark background and not too much contrasty colors.
+
+---
+
 ## Install Homebrew
 
 Homebrew is a package manager for macOS. Visit [this page](https://brew.sh/) for install instructions.
@@ -36,42 +48,49 @@ Homebrew is a package manager for macOS. Visit [this page](https://brew.sh/) for
 
 Here are a few good packages I like to use in my command line:
 
+- [git](https://formulae.brew.sh/formula/git) - Git
+- [node](https://formulae.brew.sh/formula/node) - Node.js
+- [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager
+- [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager
 - [cowsay](https://formulae.brew.sh/formula/cowsay) - I use it for my greeting message upon opening a new tab in command line.
 - [fortune](https://formulae.brew.sh/formula/fortune) - A cool electronic fortune-cookie generator
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
 - [gti](https://formulae.brew.sh/formula/gti) - Funny ASCII-art displaying typo-corrector for the classic "gti" instead of "git" typo.
+- [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
 
 ---
 
 ## Install Fish
 
-Go to <https://fishshell.com/> and download the latest version of fish. Use the installer as it will install fish to /usr/local (most online tutorials will have stuff that addresses fish being installed there).
+You've already installed it, if you installed the last brew package listed above!
 
 ---
 
 ## Setup as default shell
 
-To change your login shell to fish, do the following steps.
-
-Add the shell to /etc/shells with:
+First of all, you need to enter fish. You can do that with this command:
 
 ```bash
- echo /usr/local/bin/fish | sudo tee -a /etc/shells
+fish
 ```
 
-This creates a new line in /etc/shells, so you can use the following command to change your default shell to fish:
+Fish does not know about brew yet, so the `brew` command is not yet recognised. That can be fixed with this command:
 
 ```bash
- chsh -s /usr/local/bin/fish
+fish_add_path /opt/homebrew/bin
 ```
 
-If fish is not installed in /usr/local/bin, you can use the following command to find out where it is:
+Now that fish and brew know each other, you can add the reference to the fish shell on your list of accepted system shells. You can do that with this command:
 
 ```bash
- which fish
+echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
 ```
 
-You can use the result of that command and replace `/usr/local/bin/fish` after the `chsh -s` command. Because you installed fish with the online installer, this step should not be needed.
+Now, you can use the following command to change your default shell to fish:
+
+```bash
+chsh -s /opt/homebrew/bin/fish
+```
 
 ---
 
@@ -95,7 +114,11 @@ Here is a list of useful plugins. They all have installation instructions in the
 - [z](https://github.com/jethrokuan/z) - A way to jump through folders quickly.
 - [nvm](https://github.com/jorgebucaran/nvm.fish) - A way to manage multiple versions of Node.js.
 - [Sponge](https://github.com/andreiborisov/sponge) - Removes typos from your command input history.
-- [Tide](https://github.com/IlanCosman/tide) - A really nice prompt for fish. Keep in mind that you will need to install a font to have it working properly! (Instructions are in the README.md file in the repo.)
+- [Tide](https://github.com/IlanCosman/tide) - A really nice prompt for fish.
+  - Keep in mind that you will need to install [these fonts](https://github.com/IlanCosman/tide#fonts) to have it working properly!
+    - After installing those fonts, set them as the default font in your terminal preferences. Open `Preferences / Profiles / Text` and select the font you want to use.
+    - After these fonts are installed, make sure your have ligatures enabled and anti-aliasing as well.
+  - Don't forget to configure tide!
 
 ---
 
