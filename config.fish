@@ -49,8 +49,3 @@ end
 function empty-commit -d "Commit an empty commit to (potentially) trigger a build"
     git commit --allow-empty --message="chore: trigger build"
 end
-
-
-
-
-thefuck --alias | source
