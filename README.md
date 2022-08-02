@@ -53,9 +53,11 @@ Here are a few good packages I like to use in my command line:
 - [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager
 - [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager
 - [cowsay](https://formulae.brew.sh/formula/cowsay) - I use it for my greeting message upon opening a new tab in command line.
-- [fortune](https://formulae.brew.sh/formula/fortune) - A cool electronic fortune-cookie generator
+- [fortune](https://formulae.brew.sh/formula/fortune) - Cool electronic fortune-cookie generator
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
 - [gti](https://formulae.brew.sh/formula/gti) - Funny ASCII-art displaying typo-corrector for the classic "gti" instead of "git" typo.
+- [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
+- [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
 - [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
 
 ---
@@ -113,7 +115,6 @@ Here is a list of useful plugins. They all have installation instructions in the
 
 - [z](https://github.com/jethrokuan/z) - A way to jump through folders quickly.
 - [nvm](https://github.com/jorgebucaran/nvm.fish) - A way to manage multiple versions of Node.js.
-- [Sponge](https://github.com/andreiborisov/sponge) - Removes typos from your command input history.
 - [Tide](https://github.com/IlanCosman/tide) - A really nice prompt for fish.
   - Keep in mind that you will need to install [these fonts](https://github.com/IlanCosman/tide#fonts) to have it working properly!
     - After installing those fonts, set them as the default font in your terminal preferences. Open `Preferences / Profiles / Text` and select the font you want to use.
@@ -125,3 +126,4 @@ Here is a list of useful plugins. They all have installation instructions in the
 ## Configure fish with your aliases, etc
 
 Copy the contents of the `config.fish` file (in this repo) to your `~/.config/fish/config.fish` file.
+Copy the `fuck.fish` file (in this repo) to your `~/.config/fish/functions` folder.
