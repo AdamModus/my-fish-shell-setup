@@ -55,7 +55,6 @@ Here are a few good packages I like to use in my command line:
 - [cowsay](https://formulae.brew.sh/formula/cowsay) - I use it for my greeting message upon opening a new tab in command line.
 - [fortune](https://formulae.brew.sh/formula/fortune) - Cool electronic fortune-cookie generator
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
-- [gti](https://formulae.brew.sh/formula/gti) - Funny ASCII-art displaying typo-corrector for the classic "gti" instead of "git" typo.
 - [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
 - [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
 - [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
