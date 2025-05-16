@@ -26,7 +26,7 @@ killall Finder
 
 ---
 
-## Install iTerm2
+## Install Terminal apps
 
 [iTerm2](https://iterm2.com/) is a replacement for the default Terminal app. It looks nice and has cool features.
 
@@ -50,14 +50,25 @@ Here are a few good packages I like to use in my command line:
 
 - [git](https://formulae.brew.sh/formula/git) - Git
 - [node](https://formulae.brew.sh/formula/node) - Node.js
-- [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager
-- [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager
-- [cowsay](https://formulae.brew.sh/formula/cowsay) - I use it for my greeting message upon opening a new tab in command line.
-- [fortune](https://formulae.brew.sh/formula/fortune) - Cool electronic fortune-cookie generator
+- [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager.
+- [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager.
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
 - [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
 - [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
+- [fastfetch](https://formulae.brew.sh/formula/fastfetch#default) - A fast system information display tool.
+- [lsd](https://formulae.brew.sh/formula/lsd) - A better `ls` command, with icons and colors.
+- [pyenv](https://formulae.brew.sh/formula/pyenv) - Python version manager
+- [rust](https://formulae.brew.sh/formula/rust) - Rust programming language, comes with Cargo (Rust's package manager)
+- [Alacritty](https://formulae.brew.sh/cask/alacritty) - A terminal emulator with GPU acceleration.
+- [Ghostty](https://formulae.brew.sh/cask/ghostty) - A terminal emulator with GPU acceleration.
+- [Kitty](https://formulae.brew.sh/cask/kitty) - A terminal emulator with GPU acceleration.
 - [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
+
+---
+
+## Install Rust packages
+
+- [pokeget-rs](https://github.com/talwat/pokeget-rs) - A way to get Pokemon images from the PokeAPI.
 
 ---
 
@@ -67,7 +78,7 @@ You've already installed it, if you installed the last brew package listed above
 
 ---
 
-## Setup as default shell
+### Setup as default shell
 
 First of all, you need to enter fish. You can do that with this command:
 
@@ -95,7 +106,7 @@ chsh -s /opt/homebrew/bin/fish
 
 ---
 
-## Install Fisher
+### Install Fisher
 
 Fisher is a plugin manager for Fish. It offers a way to install and manage plugins for fish.
 You can check the install guide [here](https://github.com/jorgebucaran/fisher). But, realistically, all you have to do is run the following command:
@@ -108,7 +119,7 @@ Now we have a nice way to install all the plugins we need.
 
 ---
 
-## Install your plugins with Fisher
+### Install your plugins with Fisher
 
 Here is a list of useful plugins. They all have installation instructions in the README.md file in their repos (links below)
 
@@ -119,10 +130,12 @@ Here is a list of useful plugins. They all have installation instructions in the
     - After installing those fonts, set them as the default font in your terminal preferences. Open `Preferences / Profiles / Text` and select the font you want to use.
     - After these fonts are installed, make sure your have ligatures enabled and anti-aliasing as well.
   - Don't forget to configure tide!
+- [dracula/fish](https://github.com/dracula/fish) - A dark theme for fish.
+- [fish-abbreviation-tips](https://github.com/gazorby/fish-abbreviation-tips) - A way to get tips about abbreviations you can use in fish.
+- [done](https://github.com/franciscolourenco/done) - A way to mark tasks as done.
 
 ---
 
 ## Configure fish with your aliases, etc
 
 Copy the contents of the `config.fish` file (in this repo) to your `~/.config/fish/config.fish` file.
-Copy the `fuck.fish` file (in this repo) to your `~/.config/fish/functions` folder.

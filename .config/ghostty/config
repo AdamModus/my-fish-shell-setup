@@ -1,0 +1,12 @@
+# theme
+theme = dracula
+
+# font config
+font-size = 15
+
+# transparency
+background-opacity = 0.95
+
+# tab navigation
+keybind = super+alt+right=next_tab
+keybind = super+alt+left=previous_tab
