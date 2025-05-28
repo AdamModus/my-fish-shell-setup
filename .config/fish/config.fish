@@ -7,8 +7,8 @@ function fish_greeting
     pokeget random --hide-name | fastfetch --file-raw -
 end
 
-# pyenv is a Python version manager
-pyenv init - | source
+# pyenv is a Python version manager - lazy load it because I rarely use it
+status --is-interactive; and functions -q pyenv; or source (pyenv init - | psub)
 
 #                  _       _     _
 # /\   /\__ _ _ __(_) __ _| |__ | | ___  ___
