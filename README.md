@@ -48,6 +48,7 @@ Homebrew is a package manager for macOS. Visit [this page](https://brew.sh/) for
 
 Here are a few good packages I like to use in my command line:
 - [Alacritty](https://formulae.brew.sh/cask/alacritty) - A terminal emulator with GPU acceleration.
+- [bartender](https://formulae.brew.sh/cask/bartender) - App to organise icons on the menu bar
 - [btop](https://github.com/aristocratos/btop) - Resource monitor that shows usage and stats for processor, memory, disks, network and processes.
 - [cmatrix](https://formulae.brew.sh/formula/cmatrix) - Matrix in the command line, because it's fun.
 - [fastfetch](https://formulae.brew.sh/formula/fastfetch#default) - A fast system information display tool.
