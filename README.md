@@ -61,6 +61,7 @@ Here are a few good packages I like to use in my command line:
 - [node](https://formulae.brew.sh/formula/node) - Node.js
 - [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager.
 - [pyenv](https://formulae.brew.sh/formula/pyenv) - Python version manager
+- [rectangle](https://formulae.brew.sh/cask/rectangle) - Move and resize windows using keyboard shortcuts or snap areas
 - [rust](https://formulae.brew.sh/formula/rust) - Rust programming language, comes with Cargo (Rust's package manager).
 - [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
 - [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
