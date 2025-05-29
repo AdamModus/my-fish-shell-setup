@@ -56,6 +56,7 @@ Here are a few good packages I like to use in my command line:
 - [fnm](https://formulae.brew.sh/formula/fnm) - Fast and simple Node.js version manager, built in Rust.
 - [git](https://formulae.brew.sh/formula/git) - Git
 - [Ghostty](https://formulae.brew.sh/cask/ghostty) - A terminal emulator with GPU acceleration.
+- [Ice](https://formulae.brew.sh/cask/jordanbaird-ice) - Open source alternative to bartender - Organise icons on the macos menu bar
 - [Kitty](https://formulae.brew.sh/cask/kitty) - A terminal emulator with GPU acceleration.
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
 - [lsd](https://formulae.brew.sh/formula/lsd) - A better `ls` command, with icons and colors.
