@@ -10,8 +10,14 @@ end
 # zoxide is a fast directory jumper
 zoxide init fish | source
 
+# fnm is a Node.js version manager written in Rust
+fnm env --shell fish | source
+
 # pyenv is a Python version manager - lazy load it because I rarely use it
-status --is-interactive; and functions -q pyenv; or source (pyenv init - | psub)
+function pyenv
+    functions -q pyenv; or source (pyenv init - | psub)
+    command pyenv $argv
+end
 
 #                  _       _     _
 # /\   /\__ _ _ __(_) __ _| |__ | | ___  ___
@@ -32,7 +38,7 @@ status --is-interactive; and functions -q pyenv; or source (pyenv init - | psub)
 alias ls='lsd'
 
 # l list all files and folders in current folder, including hiddens ones
-alias l="ll -la"
+abbr l "ll -la"
 
 # Quicker way of using yarn
 alias y="yarn"
@@ -41,7 +47,10 @@ alias y="yarn"
 alias finder="open"
 
 # Quicker way of using pnpm
-alias p="pnpm"
+abbr p pnpm
+
+# fnm is a Node.js version manager written in Rust
+alias nvm="fnm"
 
 #   ___                 _   _
 #  / __\   _ _ __   ___| |_(_) ___  _ __  ___
