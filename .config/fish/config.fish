@@ -7,6 +7,9 @@ function fish_greeting
     pokeget random --hide-name | fastfetch --file-raw -
 end
 
+# zoxide is a fast directory jumper
+zoxide init fish | source
+
 # pyenv is a Python version manager - lazy load it because I rarely use it
 status --is-interactive; and functions -q pyenv; or source (pyenv init - | psub)
 
