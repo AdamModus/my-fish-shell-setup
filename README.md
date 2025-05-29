@@ -47,22 +47,25 @@ Homebrew is a package manager for macOS. Visit [this page](https://brew.sh/) for
 ## Install tasty homebrew packages
 
 Here are a few good packages I like to use in my command line:
-
-- [git](https://formulae.brew.sh/formula/git) - Git
-- [node](https://formulae.brew.sh/formula/node) - Node.js
-- [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager.
-- [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager.
-- [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
-- [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
-- [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
-- [fastfetch](https://formulae.brew.sh/formula/fastfetch#default) - A fast system information display tool.
-- [lsd](https://formulae.brew.sh/formula/lsd) - A better `ls` command, with icons and colors.
-- [pyenv](https://formulae.brew.sh/formula/pyenv) - Python version manager
-- [rust](https://formulae.brew.sh/formula/rust) - Rust programming language, comes with Cargo (Rust's package manager)
 - [Alacritty](https://formulae.brew.sh/cask/alacritty) - A terminal emulator with GPU acceleration.
+- [btop](https://github.com/aristocratos/btop) - Resource monitor that shows usage and stats for processor, memory, disks, network and processes.
+- [cmatrix](https://formulae.brew.sh/formula/cmatrix) - Matrix in the command line, because it's fun.
+- [fastfetch](https://formulae.brew.sh/formula/fastfetch#default) - A fast system information display tool.
+- [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
+- [fnm](https://formulae.brew.sh/formula/fnm) - Fast and simple Node.js version manager, built in Rust.
+- [git](https://formulae.brew.sh/formula/git) - Git
 - [Ghostty](https://formulae.brew.sh/cask/ghostty) - A terminal emulator with GPU acceleration.
 - [Kitty](https://formulae.brew.sh/cask/kitty) - A terminal emulator with GPU acceleration.
-- [fish](https://formulae.brew.sh/formula/fish) - Fish shell, my favourite shell!
+- [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
+- [lsd](https://formulae.brew.sh/formula/lsd) - A better `ls` command, with icons and colors.
+- [node](https://formulae.brew.sh/formula/node) - Node.js
+- [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager.
+- [pyenv](https://formulae.brew.sh/formula/pyenv) - Python version manager
+- [rust](https://formulae.brew.sh/formula/rust) - Rust programming language, comes with Cargo (Rust's package manager).
+- [stats](https://github.com/exelban/stats) - A macOS system monitor for the menu bar.
+- [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
+- [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager.
+- [zoxide](https://formulae.brew.sh/formula/zoxide) - zoxide is a smarter cd command, inspired by z and autojump.
 
 ---
 
@@ -123,8 +126,6 @@ Now we have a nice way to install all the plugins we need.
 
 Here is a list of useful plugins. They all have installation instructions in the README.md file in their repos (links below)
 
-- [z](https://github.com/jethrokuan/z) - A way to jump through folders quickly.
-- [nvm](https://github.com/jorgebucaran/nvm.fish) - A way to manage multiple versions of Node.js.
 - [Tide](https://github.com/IlanCosman/tide) - A really nice prompt for fish.
   - Keep in mind that you will need to install [these fonts](https://github.com/IlanCosman/tide#fonts) to have it working properly!
     - After installing those fonts, set them as the default font in your terminal preferences. Open `Preferences / Profiles / Text` and select the font you want to use.
