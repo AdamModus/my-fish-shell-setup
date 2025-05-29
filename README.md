@@ -46,7 +46,7 @@ Homebrew is a package manager for macOS. Visit [this page](https://brew.sh/) for
 
 ## Install tasty homebrew packages
 
-Here are a few good packages I like to use in my command line:
+Here are a few good packages I like to use:
 - [Alacritty](https://formulae.brew.sh/cask/alacritty) - A terminal emulator with GPU acceleration.
 - [bartender](https://formulae.brew.sh/cask/bartender) - App to organise icons on the menu bar
 - [btop](https://github.com/aristocratos/btop) - Resource monitor that shows usage and stats for processor, memory, disks, network and processes.
@@ -60,7 +60,6 @@ Here are a few good packages I like to use in my command line:
 - [Kitty](https://formulae.brew.sh/cask/kitty) - A terminal emulator with GPU acceleration.
 - [lolcat](https://formulae.brew.sh/formula/lolcat) - Get rainbows and unicorns in your terminal!
 - [lsd](https://formulae.brew.sh/formula/lsd) - A better `ls` command, with icons and colors.
-- [node](https://formulae.brew.sh/formula/node) - Node.js
 - [pnpm](https://formulae.brew.sh/formula/pnpm) - Alternative JS package manager.
 - [pyenv](https://formulae.brew.sh/formula/pyenv) - Python version manager
 - [rectangle](https://formulae.brew.sh/cask/rectangle) - Move and resize windows using keyboard shortcuts or snap areas
@@ -69,6 +68,42 @@ Here are a few good packages I like to use in my command line:
 - [thefuck](https://formulae.brew.sh/formula/thefuck) - Utility to programmatically correct mistyped console commands.
 - [yarn](https://formulae.brew.sh/formula/yarn) - (Version 1 only) JS package manager.
 - [zoxide](https://formulae.brew.sh/formula/zoxide) - zoxide is a smarter cd command, inspired by z and autojump.
+
+Here is a script to install them:
+```
+echo "🔄 Updating Homebrew..."
+brew update
+brew upgrade
+
+echo "🍺 Installing CLI packages..."
+brew install \
+  btop \
+  cmatrix \
+  fastfetch \
+  fish \
+  fnm \
+  git \
+  lolcat \
+  lsd \
+  pnpm \
+  pyenv \
+  rust \
+  thefuck \
+  yarn \
+  zoxide
+
+echo "🍺 Installing Cask (GUI) apps..."
+brew install --cask \
+  alacritty \
+  bartender \
+  ghostty \
+  jordanbaird-ice \
+  kitty \
+  rectangle \
+  stats
+
+echo "✅ All packages installed!"
+```
 
 ---
 
