@@ -7,7 +7,7 @@ function fish_greeting
     pokeget random --hide-name | fastfetch --file-raw -
 end
 
-# zoxide is a fast directory jumper
+# zoxide is a smarter cd command, inspired by z and autojump.
 zoxide init fish | source
 
 # fnm is a Node.js version manager written in Rust
