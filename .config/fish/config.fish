@@ -31,7 +31,7 @@ end
 alias ls='lsd'
 
 # l list all files and folders in current folder, including hiddens ones
-abbr l "ll -la"
+alias l "ls -la"
 
 # Quicker way of using yarn
 alias y="yarn"
